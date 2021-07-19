@@ -1,14 +1,7 @@
 import React, { useEffect, useContext, useState } from "react";
-import {
-  View,
-  Text,
-  Image,
-  StyleSheet,
-  TextInput,
-  Button,
-  Alert,
-} from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import FormContacto from "../components/Contact/FormContact";
 
 import { VehiculosContext } from "../context/VehiculosContext";
 import { COLORS, FONTS, TEXTS } from "../styles/base";
@@ -88,20 +81,7 @@ const CarDetail = ({ vehiculos, route, navigation }) => {
                 ? "Consulte precio"
                 : `$ ${productoAmpliado.precio}`}
             </Text>
-            <View style={styles.container}>
-              <Text style={styles.label}>Nombre</Text>
-              <TextInput style={styles.input} />
-
-              <Text style={styles.label}>Email</Text>
-              <TextInput style={styles.input} />
-
-              <Text style={styles.label}>Telefono</Text>
-              <TextInput style={styles.input} />
-
-              <View style={styles.button}>
-                <Button color={COLORS.primary} title="Consultar" />
-              </View>
-            </View>
+            <FormContacto />
           </View>
         </View>
       ) : null}
@@ -175,30 +155,6 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary,
     resizeMode: "cover",
     borderRadius: 10,
-  },
-  label: {
-    color: COLORS.primary,
-    margin: 10,
-    marginLeft: 0,
-  },
-  button: {
-    marginTop: 20,
-    color: COLORS.primary,
-    backgroundColor: COLORS.primary,
-    height: 40,
-    borderRadius: 4,
-  },
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    padding: 8,
-  },
-  input: {
-    backgroundColor: "white",
-    borderColor: "grey",
-    height: 40,
-    padding: 10,
-    borderRadius: 4,
   },
 });
 
