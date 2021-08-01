@@ -35,6 +35,7 @@ const Car = ({ vehiculos, navigation }) => {
       <View style={styles.containInfoVehicle}>
         <Text style={styles.titleVehicle}>
           {vehiculo.marca.toLowerCase()} {vehiculo.modelo}
+          {console.log(`http://www.${vehiculo.pictures[0].url}`)}
         </Text>
         <Text style={styles.versionVehicle}>{vehiculo.version}</Text>
 

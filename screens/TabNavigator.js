@@ -9,6 +9,7 @@ import CarList from "./CarList";
 import ContactUs from "./ContactUs";
 
 import { COLORS } from "../styles/base";
+import CarDetail from "./CarDetail";
 
 const TabOptions = {
   showIcon: true,
@@ -31,6 +32,20 @@ export default function TabNavigator({ navigation }) {
       tabBarOptions={{
         activeTintColor: COLORS.primary,
         inactiveTintColor: COLORS.lightgrey,
+        style: {
+          height: 60,
+          width: "90%",
+          marginVertical: 10,
+          flexDirection: "column",
+          alignSelf: "center",
+          elevation: 2,
+          borderRadius: 10,
+          paddingTop: 10,
+          paddingBottom: 10,
+          position: "absolute",
+          left: "5%",
+          backgroundColor: COLORS.white,
+        },
       }}
     >
       <Tab.Screen

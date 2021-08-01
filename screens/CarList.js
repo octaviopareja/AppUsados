@@ -38,6 +38,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-start",
     alignItems: "flex-start",
+    paddingTop: 60,
+    paddingBottom: 85,
   },
   carList: {
     flex: 1,

@@ -17,15 +17,7 @@ const MainNavigator = () => (
   <NavigationContainer>
     <Stack.Navigator
       initialRouteName="TabNavigator"
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: Platform.OS === "android" ? Colors.primary : "",
-        },
-        headerTitleStyle: {
-          fontWeight: "bold",
-        },
-        headerTintColor: Platform.OS === "android" ? "white" : Colors.primary,
-      }}
+      screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="Home" component={Home} options={{ title: "Home" }} />
 
@@ -52,7 +44,8 @@ const MainNavigator = () => (
         component={CarDetail}
         options={({ route }) => ({
           id: route.params.id,
-          title: `${route.params.marca} ${route.params.modelo}`,
+          title: "Ver todos",
+          headerShown: true,
         })}
       />
 

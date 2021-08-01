@@ -23,13 +23,13 @@ const Home = ({ navigation }) => {
           resizeMode="contain"
         ></Image>
         <Text style={styles.text}>La mejor manera de comprar tu auto</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Vehiculos")}>
           <Text style={styles.button}>Quiero comprar un auto</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Nosotros")}>
           <Text style={styles.button}>Sobre Grupo Montironi</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Contacto")}>
           <Text style={styles.button}>Enviar una consulta</Text>
         </TouchableOpacity>
       </View>

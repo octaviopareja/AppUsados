@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    padding: 8,
+    paddingBottom: 20,
   },
   input: {
     fontFamily: FONTS.primary.regular,
@@ -49,6 +49,11 @@ const styles = StyleSheet.create({
     height: 40,
     padding: 10,
     borderRadius: 4,
+  },
+  textArea: {
+    height: 90,
+    justifyContent: "flex-start",
+    textAlignVertical: "top",
   },
 });
 

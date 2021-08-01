@@ -49,7 +49,7 @@ const VehiculosProvider = (props) => {
       try {
         //GET FROM JSON REMOTE
         const respuesta = await axios.get(
-          "http://montironi.com/marketing/json_usados/usadosprueba.json",
+          "https://montironi.com/marketing/json_usados/usadosprueba.json",
           { crossdomain: true }
         );
 
