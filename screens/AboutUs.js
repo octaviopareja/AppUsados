@@ -23,6 +23,21 @@ const AboutUs = ({ navigation }) => {
         style={styles.sucursal}
         source={require("../assets/sucursal.png")}
       ></Image>
+
+      <View style={styles.marcas}>
+        <Image
+          style={styles.logo}
+          source={require("../assets/logo_ford.png")}
+        ></Image>
+        <Image
+          style={styles.logo}
+          source={require("../assets/logo_fiat.png")}
+        ></Image>
+        <Image
+          style={styles.logo}
+          source={require("../assets/logo_hyundai.png")}
+        ></Image>
+      </View>
     </View>
   );
 };
@@ -51,6 +66,12 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 10,
     marginTop: 15,
+  },
+  logo: { maxWidth: 100, margin: 20 },
+  marcas: {
+    justifyContent: "space-around",
+    flexDirection: "row",
+    paddingTop: 20,
   },
 });
 
