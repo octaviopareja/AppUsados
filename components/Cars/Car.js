@@ -28,14 +28,14 @@ const Car = ({ vehiculos, navigation }) => {
         <Image
           style={styles.imgVehicle}
           source={{
-            uri: `http://${vehiculo.pictures[0].url}`,
+            uri: `https://www.${vehiculo.pictures[0].url}`,
           }}
         />
       </View>
       <View style={styles.containInfoVehicle}>
         <Text style={styles.titleVehicle}>
           {vehiculo.marca.toLowerCase()} {vehiculo.modelo}
-          {console.log(`http://www.${vehiculo.pictures[0].url}`)}
+          {console.log(`https://www.${vehiculo.pictures[0].url}`)}
         </Text>
         <Text style={styles.versionVehicle}>{vehiculo.version}</Text>
 
